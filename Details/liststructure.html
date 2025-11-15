@@ -51,19 +51,65 @@
             margin: 10px 0;
             background: #eee;
         }
+       
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left, .right {
+        width: 100%;
+        padding: 25px;
+        overflow-y: visible;
+    }
+
+    .right {
+        border-left: none;
+        border-top: 2px solid #ddd;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .left, .right {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    pre {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .example-box {
+        padding: 15px;
+    }
+
+    .demo-box {
+        padding: 8px;
+        margin: 8px 0;
+    }
+}
+
     </style>
 </head>
 
 <body>
 <div class="container">
 
-    <!-- LEFT SIDE – EXPLANATION -->
     <div class="left">
 
         <h2>List Tags in HTML</h2>
         <p>HTML provides tags to create ordered, unordered, and description lists.</p>
 
-        <!-- UL -->
         <h3>1. &lt;ul&gt; – Unordered List</h3>
         <p>Displays items with bullets. Common for menus or general lists.</p>
 <pre><code>&lt;ul&gt;
@@ -71,7 +117,6 @@
     &lt;li&gt;Item 2&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 
-        <!-- OL -->
         <h3>2. &lt;ol&gt; – Ordered List</h3>
         <p>Displays items with numbers or letters.</p>
 <pre><code>&lt;ol&gt;
@@ -79,12 +124,10 @@
     &lt;li&gt;Second&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
 
-        <!-- LI -->
         <h3>3. &lt;li&gt; – List Item</h3>
         <p>Represents an item inside &lt;ul&gt; or &lt;ol&gt;.</p>
 <pre><code>&lt;li&gt;List item&lt;/li&gt;</code></pre>
 
-        <!-- DL, DT, DD -->
         <h3>4. Description List: &lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;</h3>
         <p>Used for definitions or name/value pairs.</p>
 <pre><code>&lt;dl&gt;
@@ -92,7 +135,6 @@
     &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
 &lt;/dl&gt;</code></pre>
 
-        <!-- Nested List -->
         <h3>5. Nested Lists</h3>
         <p>Lists can be placed inside other lists.</p>
 <pre><code>&lt;ul&gt;
@@ -103,7 +145,6 @@
     &lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 
-        <!-- List Style -->
         <h3>6. list-style Properties (CSS)</h3>
         <p>Controls how list markers look.</p>
 <pre><code>ul {
@@ -116,7 +157,6 @@ ol {
 
     </div>
 
-    <!-- RIGHT SIDE – OUTPUT -->
     <div class="right">
         <h2>Output Preview</h2>
 

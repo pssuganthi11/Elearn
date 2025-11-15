@@ -4,127 +4,160 @@
     <meta charset="UTF-8">
     <title>Container Tags – HTML Learning</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f4f4f4;
-        }
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f4f4f4;
+    }
 
+    .container {
+        display: flex;
+        height: 100vh;
+    }
+
+    .left, .right {
+        width: 50%;
+        padding: 40px;
+        overflow-y: scroll;
+    }
+
+    .left {
+        background: #fff;
+        border-right: 2px solid #ddd;
+    }
+
+    .right {
+        background: #fafafa;
+    }
+
+    h2 { margin-top: 0; }
+
+    pre {
+        background: #333;
+        color: #fff;
+        padding: 10px;
+        overflow-x: auto;
+    }
+
+    .example-box {
+        padding: 20px;
+        background: #fff;
+        border: 1px solid #ddd;
+    }
+
+    .demo-box {
+        border: 1px solid #aaa;
+        padding: 10px;
+        margin: 10px 0;
+        background: #eee;
+    }
+
+    
+    /* Tablets – Below 992px */
+    @media (max-width: 992px) {
         .container {
-            display: flex;
-            height: 100vh;
+            flex-direction: column;
+            height: auto;
         }
 
         .left, .right {
-            width: 50%;
-            padding: 40px;
-            overflow-y: scroll;
+            width: 100%;
+            padding: 25px;
+            overflow-y: visible;
         }
 
-        .left {
-            background: #fff;
-            border-right: 2px solid #ddd;
-        }
         .right {
-            background: #fafafa;
+            border-top: 2px solid #ddd;
         }
+    }
 
-        h2 { margin-top: 0; }
-
-        pre {
-            background: #333;
-            color: #fff;
-            padding: 10px;
-            overflow-x: auto;
+    /* Mobile – Below 600px */
+    @media (max-width: 600px) {
+        .left, .right {
+            padding: 15px;
         }
 
         .example-box {
-            padding: 20px;
-            background: #fff;
-            border: 1px solid #ddd;
+            padding: 15px;
         }
 
-        .demo-box {
-            border: 1px solid #aaa;
-            padding: 10px;
-            margin: 10px 0;
-            background: #eee;
+        pre {
+            font-size: 14px;
         }
-    </style>
+
+        h2 {
+            font-size: 22px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+    }
+</style>
+
 </head>
 
 <body>
 <div class="container">
 
-    <!-- LEFT SIDE – EXPLANATIONS -->
     <div class="left">
 
         <h2>Container & Layout Tags</h2>
         <p>Container tags group content together for layout, styling, or semantics.</p>
 
-        <!-- DIV -->
         <h3>1. &lt;div&gt; (Block Container)</h3>
         <p>Div is a block-level container used for layout or grouping elements.</p>
 <pre><code>&lt;div&gt;
     Block container
 &lt;/div&gt;</code></pre>
 
-        <!-- SPAN -->
         <h3>2. &lt;span&gt; (Inline Container)</h3>
         <p>Inline container used to wrap small pieces of text.</p>
 <pre><code>&lt;span&gt;Inline text&lt;/span&gt;</code></pre>
 
-        <!-- SECTION -->
         <h3>3. &lt;section&gt;</h3>
         <p>Represents a standalone themed section (ex: About, Services).</p>
 <pre><code>&lt;section&gt;
     &lt;h2&gt;About Us&lt;/h2&gt;
 &lt;/section&gt;</code></pre>
 
-        <!-- ARTICLE -->
         <h3>4. &lt;article&gt;</h3>
         <p>Independent self-contained content (blog post, news, card).</p>
 <pre><code>&lt;article&gt;
     &lt;h2&gt;Blog Post&lt;/h2&gt;
 &lt;/article&gt;</code></pre>
 
-        <!-- MAIN -->
         <h3>5. &lt;main&gt;</h3>
         <p>Main content area of a page. Only one per document.</p>
 <pre><code>&lt;main&gt;
     Main website content
 &lt;/main&gt;</code></pre>
 
-        <!-- HEADER -->
         <h3>6. &lt;header&gt;</h3>
         <p>Page or section header (logo, nav, title).</p>
 <pre><code>&lt;header&gt;
     &lt;h1&gt;Site Title&lt;/h1&gt;
 &lt;/header&gt;</code></pre>
 
-        <!-- FOOTER -->
         <h3>7. &lt;footer&gt;</h3>
         <p>Bottom part of page or section (copyright, links).</p>
 <pre><code>&lt;footer&gt;
     &copy; 2025 My Website
 &lt;/footer&gt;</code></pre>
 
-        <!-- NAV -->
         <h3>8. &lt;nav&gt;</h3>
         <p>Defines navigation menu links.</p>
 <pre><code>&lt;nav&gt;
     &lt;a href="#"&gt;Home&lt;/a&gt;
 &lt;/nav&gt;</code></pre>
 
-        <!-- ASIDE -->
         <h3>9. &lt;aside&gt;</h3>
         <p>Side content (sidebar, ads, related posts).</p>
 <pre><code>&lt;aside&gt;
     Sidebar content
 &lt;/aside&gt;</code></pre>
 
-        <!-- FIGURE -->
         <h3>10. &lt;figure&gt; + &lt;figcaption&gt;</h3>
         <p>Used for images with captions.</p>
 <pre><code>&lt;figure&gt;
@@ -132,7 +165,6 @@
     &lt;figcaption&gt;Image caption&lt;/figcaption&gt;
 &lt;/figure&gt;</code></pre>
 
-        <!-- DETAILS -->
         <h3>11. &lt;details&gt; + &lt;summary&gt;</h3>
         <p>Expandable/collapsible content.</p>
 <pre><code>&lt;details&gt;
@@ -142,7 +174,6 @@
 
     </div>
 
-    <!-- RIGHT SIDE – OUTPUT -->
     <div class="right">
         <h2>Output Preview</h2>
 

@@ -56,38 +56,91 @@
             max-width: 100%;
         }
 
+       
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left, .right {
+        width: 100%;
+        padding: 25px;
+        overflow-y: visible;
+    }
+
+    .right {
+        border-left: none;
+        border-top: 2px solid #ddd;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .left, .right {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    pre {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .example-box {
+        padding: 15px;
+    }
+
+    .demo-box {
+        padding: 8px;
+        margin: 10px 0;
+    }
+
+    video, audio {
+        width: 100% !important;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
     </style>
 </head>
 
 <body>
 <div class="container">
 
-    <!-- LEFT SIDE – EXPLANATION -->
     <div class="left">
 
         <h2>Media Tags</h2>
         <p>HTML provides media tags to display and control audio, video, and images.</p>
 
-        <!-- IMG -->
         <h3>1. &lt;img&gt; (Image)</h3>
         <p>Displays an image on the page.</p>
 <pre><code>&lt;img src="photo.jpg" alt="Description"&gt;</code></pre>
 
-        <!-- AUDIO -->
         <h3>2. &lt;audio&gt;</h3>
         <p>Embeds audio with controls.</p>
 <pre><code>&lt;audio controls&gt;
     &lt;source src="sound.mp3" type="audio/mpeg"&gt;
 &lt;/audio&gt;</code></pre>
 
-        <!-- VIDEO -->
         <h3>3. &lt;video&gt;</h3>
         <p>Embeds a video player.</p>
 <pre><code>&lt;video width="320" controls&gt;
     &lt;source src="movie.mp4" type="video/mp4"&gt;
 &lt;/video&gt;</code></pre>
 
-        <!-- SOURCE -->
         <h3>4. &lt;source&gt;</h3>
         <p>Defines multiple media file sources for audio/video.</p>
 <pre><code>&lt;video controls&gt;
@@ -95,7 +148,6 @@
     &lt;source src="movie.webm" type="video/webm"&gt;
 &lt;/video&gt;</code></pre>
 
-        <!-- FIGURE -->
         <h3>5. &lt;figure&gt; + &lt;figcaption&gt;</h3>
         <p>Used for images or media with captions.</p>
 <pre><code>&lt;figure&gt;
@@ -103,7 +155,6 @@
     &lt;figcaption&gt;Caption text&lt;/figcaption&gt;
 &lt;/figure&gt;</code></pre>
 
-        <!-- PICTURE -->
         <h3>6. &lt;picture&gt;</h3>
         <p>Allows responsive images for different screen sizes.</p>
 <pre><code>&lt;picture&gt;
@@ -112,7 +163,6 @@
     &lt;img src="default.jpg" alt="Responsive"&gt;
 &lt;/picture&gt;</code></pre>
 
-        <!-- TRACK -->
         <h3>7. &lt;track&gt;</h3>
         <p>Adds subtitles or captions to videos.</p>
 <pre><code>&lt;video controls&gt;
@@ -122,7 +172,6 @@
 
     </div>
 
-    <!-- RIGHT – OUTPUT PREVIEW -->
     <div class="right">
         <h2>Output Preview</h2>
 

@@ -64,43 +64,101 @@
             padding: 8px;
         }
 
+.demo-box {
+    overflow-x: auto;
+}
+
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left, .right {
+        width: 100%;
+        padding: 25px;
+        overflow-y: visible;
+    }
+
+    .right {
+        border-left: none;
+        border-top: 2px solid #ddd;
+    }
+
+    table {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .left, .right {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    pre {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .example-box {
+        padding: 15px;
+    }
+
+    .demo-box {
+        padding: 10px;
+        margin: 12px 0;
+    }
+
+    table {
+        width: 600px; 
+    }
+
+    .demo-box {
+        overflow-x: scroll; 
+    }
+}
+
     </style>
 </head>
 
 <body>
 <div class="container">
 
-    <!-- LEFT SIDE – EXPLANATIONS -->
     <div class="left">
 
         <h2>Table Tags</h2>
         <p>HTML tables are used to display structured data in rows and columns.</p>
 
-        <!-- TABLE -->
         <h3>1. &lt;table&gt;</h3>
         <p>The main container for all table elements.</p>
 <pre><code>&lt;table&gt;
     ...
 &lt;/table&gt;</code></pre>
 
-        <!-- TR -->
         <h3>2. &lt;tr&gt; – Table Row</h3>
         <p>Defines a row inside a table.</p>
 <pre><code>&lt;tr&gt;
     &lt;td&gt;Row data&lt;/td&gt;
 &lt;/tr&gt;</code></pre>
 
-        <!-- TD -->
         <h3>3. &lt;td&gt; – Table Data Cell</h3>
         <p>A standard data cell in a table.</p>
 <pre><code>&lt;td&gt;Cell content&lt;/td&gt;</code></pre>
 
-        <!-- TH -->
         <h3>4. &lt;th&gt; – Table Header Cell</h3>
         <p>Defines a heading cell (usually bold + centered).</p>
 <pre><code>&lt;th&gt;Header&lt;/th&gt;</code></pre>
 
-        <!-- THEAD -->
         <h3>5. &lt;thead&gt;</h3>
         <p>Groups the header content of a table.</p>
 <pre><code>&lt;thead&gt;
@@ -110,40 +168,34 @@
     &lt;/tr&gt;
 &lt;/thead&gt;</code></pre>
 
-        <!-- TBODY -->
         <h3>6. &lt;tbody&gt;</h3>
         <p>Groups the main body content of a table.</p>
 <pre><code>&lt;tbody&gt;
     &lt;tr&gt;&lt;td&gt;John&lt;/td&gt;&lt;td&gt;22&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;</code></pre>
 
-        <!-- TFOOT -->
         <h3>7. &lt;tfoot&gt;</h3>
         <p>Defines footer rows.</p>
 <pre><code>&lt;tfoot&gt;
     &lt;tr&gt;&lt;td colspan="2"&gt;End of table&lt;/td&gt;&lt;/tr&gt;
 &lt;/tfoot&gt;</code></pre>
 
-        <!-- CAPTION -->
         <h3>8. &lt;caption&gt;</h3>
         <p>Title for the table, placed at the top.</p>
 <pre><code>&lt;caption&gt;Student Data&lt;/caption&gt;</code></pre>
 
-        <!-- COLGROUP -->
         <h3>9. &lt;colgroup&gt;</h3>
         <p>Groups one or more columns for styling.</p>
 <pre><code>&lt;colgroup&gt;
     &lt;col span="1" style="background:#ddd"&gt;
 &lt;/colgroup&gt;</code></pre>
 
-        <!-- COL -->
         <h3>10. &lt;col&gt;</h3>
         <p>Defines column-specific styles.</p>
 <pre><code>&lt;col style="background:yellow"&gt;</code></pre>
 
     </div>
 
-    <!-- RIGHT SIDE – OUTPUT PREVIEW -->
     <div class="right">
 
         <h2>Output Preview</h2>

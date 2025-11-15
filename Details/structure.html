@@ -13,6 +13,11 @@
             background: #f5f5f5;
         }
 
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+
         .container {
             display: flex;
             gap: 20px;
@@ -47,7 +52,45 @@
             border-radius: 10px;
             background: #fff;
         }
+
+  
+        @media (max-width: 992px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .left,
+            .right {
+                width: 100%;
+            }
+
+            iframe {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 22px;
+                padding: 15px;
+            }
+
+            .container {
+                padding: 10px;
+                gap: 15px;
+            }
+
+            .left,
+            .right {
+                padding: 15px;
+            }
+
+            iframe {
+                height: 250px;
+            }
+        }
     </style>
+
 </head>
 
 <body>
@@ -56,7 +99,6 @@
 
     <div class="container">
 
-        <!-- LEFT SIDE: Explanation -->
         <div class="left">
             <h2>1. &lt;!DOCTYPE html&gt;</h2>
             <p>Defines the HTML version. For HTML5, always use <b>&lt;!DOCTYPE html&gt;</b>.</p>
@@ -100,7 +142,6 @@
 
         </div>
 
-        <!-- RIGHT SIDE: Live Output Preview -->
         <div class="right">
             <h2>Output Preview</h2>
             <iframe srcdoc="<!DOCTYPE html>
