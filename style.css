@@ -59,7 +59,8 @@ header>nav>ul>li>a {
     text-decoration: none;
     color: black;
 }
-header > nav > ul > li > a:focus {
+
+header>nav>ul>li>a:focus {
     color: var(--texthover);
 }
 
@@ -403,99 +404,116 @@ footer .license {
 
     .hamburger {
         display: block;
+        font-size: 32px;
+        cursor: pointer;
+        padding: 10px;
     }
 
+    /* Hide default menu on mobile */
     .nav-links {
         position: absolute;
-        top: 80px;
+        top: 90px;
+        /* distance below navbar */
         right: 0;
-        background: white;
-        width: 200px;
+        background: #fff;
+        width: 220px;
         flex-direction: column;
         align-items: flex-start;
-        padding: 15px 0;
-        gap: 0;
-        border: 1px solid #ddd;
         display: none;
+        border: 1px solid #ddd;
+        border-radius: 0 0 0 10px;
+        overflow: hidden;
+        z-index: 999;
     }
 
     .nav-links li {
         width: 100%;
-        padding: 10px 20px;
+        padding: 12px 20px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav-links li:last-child {
+        border-bottom: none;
     }
 
     .nav-links li a {
         width: 100%;
         display: block;
+        color: #003A61;
+        font-size: 18px;
     }
 
+    /* Show menu when toggle is checked */
     #menu-toggle:checked~.nav-links {
         display: flex;
     }
+}
 
-    .herosection>.content>p{
-        font-size: 14px;
-    }
+.herosection>.content>p {
+    font-size: 14px;
+}
 
-    .about-section>.aboutcontainer>.aboutimage {
-        display: none;
-    }
+.about-section>.aboutcontainer>.aboutimage {
+    display: none;
+}
 
-    .about-section>.aboutcontainer>.aboutcontent {
-        width: 100%;
-    }
+.about-section>.aboutcontainer>.aboutcontent {
+    width: 100%;
+}
 
-    .aboutcontainer>.aboutcontent>button {
-        margin-left: 35%;
-    }
+.aboutcontainer>.aboutcontent>button {
+    margin-left: 35%;
+}
 
-    .coursecontainer {
-        grid-template-columns: auto;
+.coursecontainer {
+    grid-template-columns: auto;
 
-    }
+}
 
-    .contact-section {
-        padding: 10px;
-        width: 100%;
-        background: url("./Assets/con3.webp");
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size: cover;
+.contact-section {
+    padding: 10px;
+    width: 100%;
+    background: url("./Assets/con3.webp");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    }
+}
 
-    .contactcontainer {
-        display: block;
-        /* border: solid 1px red; */
-        width: 100%;
+.contactcontainer {
+    display: block;
+    /* border: solid 1px red; */
+    width: 100%;
 
-    }
+}
 
-    form {
-        width: 300px;
-    }
-    form textarea {
-        width: 250px;
-        color: var(--backgroundwhite);
-    }
+form {
+    width: 300px;
+}
 
-    form button {
-        width: 200px;
-    }
+form textarea {
+    width: 250px;
+    color: var(--backgroundwhite);
+}
 
-    .contacttext {
-        display: none;
-    }
+form button {
+    width: 200px;
+}
 
-    form input {
-        color: var(--backgroundwhite);
-    }
-    form>label{
-        color: var(--backgroundwhite);
-    }
-    form button{
-            width: 250px;
-            background-color: var(--texthover);
+.contacttext {
+    display: none;
+}
 
-    }
+form input {
+    color: var(--backgroundwhite);
+}
+
+form>label {
+    color: var(--backgroundwhite);
+}
+
+form button {
+    width: 250px;
+    background-color: var(--texthover);
+
 }
