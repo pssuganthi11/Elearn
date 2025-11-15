@@ -449,13 +449,7 @@ footer .license {
     }
 }
 
-.herosection>.content>p {
-    font-size: 14px;
-}
 
-.about-section>.aboutcontainer>.aboutimage {
-    display: none;
-}
 
 .about-section>.aboutcontainer>.aboutcontent {
     width: 100%;
@@ -465,10 +459,7 @@ footer .license {
     margin-left: 35%;
 }
 
-.coursecontainer {
-    grid-template-columns: auto;
 
-}
 
 .contact-section {
     padding: 10px;
@@ -515,5 +506,21 @@ form>label {
 form button {
     width: 250px;
     background-color: var(--texthover);
+
+}
+
+@media screen and (max-width: 600px) {
+    .about-section>.aboutcontainer>.aboutimage {
+        display: none;
+    }
+
+    .coursecontainer {
+        grid-template-columns: auto;
+
+    }
+    
+.herosection>.content>p {
+    font-size: 14px;
+}
 
 }
