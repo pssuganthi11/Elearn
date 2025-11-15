@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List Tags – HTML Learning</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .left, .right {
+            width: 50%;
+            padding: 40px;
+            overflow-y: scroll;
+        }
+
+        .left {
+            background: #fff;
+            border-right: 2px solid #ddd;
+        }
+        .right {
+            background: #fafafa;
+        }
+
+        h2 { margin-top: 0; }
+
+        pre {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            overflow-x: auto;
+        }
+
+        .example-box {
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+        }
+
+        .demo-box {
+            border: 1px solid #aaa;
+            padding: 10px;
+            margin: 10px 0;
+            background: #eee;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+    <!-- LEFT SIDE – EXPLANATION -->
+    <div class="left">
+
+        <h2>List Tags in HTML</h2>
+        <p>HTML provides tags to create ordered, unordered, and description lists.</p>
+
+        <!-- UL -->
+        <h3>1. &lt;ul&gt; – Unordered List</h3>
+        <p>Displays items with bullets. Common for menus or general lists.</p>
+<pre><code>&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+        <!-- OL -->
+        <h3>2. &lt;ol&gt; – Ordered List</h3>
+        <p>Displays items with numbers or letters.</p>
+<pre><code>&lt;ol&gt;
+    &lt;li&gt;First&lt;/li&gt;
+    &lt;li&gt;Second&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+        <!-- LI -->
+        <h3>3. &lt;li&gt; – List Item</h3>
+        <p>Represents an item inside &lt;ul&gt; or &lt;ol&gt;.</p>
+<pre><code>&lt;li&gt;List item&lt;/li&gt;</code></pre>
+
+        <!-- DL, DT, DD -->
+        <h3>4. Description List: &lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;</h3>
+        <p>Used for definitions or name/value pairs.</p>
+<pre><code>&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+
+        <!-- Nested List -->
+        <h3>5. Nested Lists</h3>
+        <p>Lists can be placed inside other lists.</p>
+<pre><code>&lt;ul&gt;
+    &lt;li&gt;Parent Item
+        &lt;ul&gt;
+            &lt;li&gt;Child Item&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+        <!-- List Style -->
+        <h3>6. list-style Properties (CSS)</h3>
+        <p>Controls how list markers look.</p>
+<pre><code>ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: upper-roman;
+}</code></pre>
+
+    </div>
+
+    <!-- RIGHT SIDE – OUTPUT -->
+    <div class="right">
+        <h2>Output Preview</h2>
+
+        <div class="example-box">
+
+            <h3>1. Unordered List (ul)</h3>
+            <ul class="demo-box">
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Mango</li>
+            </ul>
+
+            <h3>2. Ordered List (ol)</h3>
+            <ol class="demo-box">
+                <li>Step One</li>
+                <li>Step Two</li>
+                <li>Step Three</li>
+            </ol>
+
+            <h3>3. List Item (li)</h3>
+            <div class="demo-box">
+                <ul>
+                    <li>List item example</li>
+                </ul>
+            </div>
+
+            <h3>4. Description List</h3>
+            <dl class="demo-box">
+                <dt><strong>CPU</strong></dt>
+                <dd>Central Processing Unit</dd>
+                <dt><strong>RAM</strong></dt>
+                <dd>Random Access Memory</dd>
+            </dl>
+
+            <h3>5. Nested List</h3>
+            <ul class="demo-box">
+                <li>Frontend
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>6. Custom List Style</h3>
+            <ul class="demo-box" style="list-style-type: square;">
+                <li>Square Bullet</li>
+                <li>Another Square Item</li>
+            </ul>
+
+            <ol class="demo-box" style="list-style-type: upper-roman;">
+                <li>ROMAN I</li>
+                <li>ROMAN II</li>
+            </ol>
+
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>

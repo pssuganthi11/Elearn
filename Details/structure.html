@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Structure Tags</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .left,
+        .right {
+            width: 50%;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        pre {
+            background: #222;
+            color: #0f0;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        iframe {
+            width: 100%;
+            height: 350px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align:center; padding:20px;">HTML Structure Tags Explained</h1>
+
+    <div class="container">
+
+        <!-- LEFT SIDE: Explanation -->
+        <div class="left">
+            <h2>1. &lt;!DOCTYPE html&gt;</h2>
+            <p>Defines the HTML version. For HTML5, always use <b>&lt;!DOCTYPE html&gt;</b>.</p>
+
+            <h2>2. &lt;html&gt;</h2>
+            <p>The root element that contains the entire webpage.</p>
+
+            <h2>3. &lt;head&gt;</h2>
+            <p>Contains metadata, links, scripts, fonts, and the page title.</p>
+
+            <h2>4. &lt;title&gt;</h2>
+            <p>Defines the page name shown on the browser tab.</p>
+
+            <h2>5. &lt;meta&gt;</h2>
+            <p>Provides metadata such as charset, description, keywords.</p>
+
+            <h2>6. &lt;link&gt;</h2>
+            <p>Links external files like CSS, fonts, icons.</p>
+
+            <h2>7. &lt;body&gt;</h2>
+            <p>Contains all visible page content.</p>
+
+            <br>
+            <hr><br>
+
+            <h2>Complete Example Code:</h2>
+
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My Webpage&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome!&lt;/h1&gt;
+    &lt;p&gt;This is sample content.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        </div>
+
+        <!-- RIGHT SIDE: Live Output Preview -->
+        <div class="right">
+            <h2>Output Preview</h2>
+            <iframe srcdoc="<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<title>Preview</title>
+</head>
+<body>
+<h1>Welcome!</h1>
+<p>This is sample content.</p>
+</body>
+</html>"></iframe>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

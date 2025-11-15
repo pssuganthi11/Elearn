@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media Tags – HTML Learning</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .left, .right {
+            width: 50%;
+            padding: 40px;
+            overflow-y: scroll;
+        }
+
+        .left {
+            background: #fff;
+            border-right: 2px solid #ddd;
+        }
+        .right {
+            background: #fafafa;
+        }
+
+        h2 { margin-top: 0; }
+
+        pre {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            overflow-x: auto;
+        }
+
+        .example-box {
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+        }
+
+        .demo-box {
+            border: 1px solid #aaa;
+            padding: 10px;
+            margin: 15px 0;
+            background: #eee;
+        }
+
+        img, video, audio {
+            max-width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+    <!-- LEFT SIDE – EXPLANATION -->
+    <div class="left">
+
+        <h2>Media Tags</h2>
+        <p>HTML provides media tags to display and control audio, video, and images.</p>
+
+        <!-- IMG -->
+        <h3>1. &lt;img&gt; (Image)</h3>
+        <p>Displays an image on the page.</p>
+<pre><code>&lt;img src="photo.jpg" alt="Description"&gt;</code></pre>
+
+        <!-- AUDIO -->
+        <h3>2. &lt;audio&gt;</h3>
+        <p>Embeds audio with controls.</p>
+<pre><code>&lt;audio controls&gt;
+    &lt;source src="sound.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;</code></pre>
+
+        <!-- VIDEO -->
+        <h3>3. &lt;video&gt;</h3>
+        <p>Embeds a video player.</p>
+<pre><code>&lt;video width="320" controls&gt;
+    &lt;source src="movie.mp4" type="video/mp4"&gt;
+&lt;/video&gt;</code></pre>
+
+        <!-- SOURCE -->
+        <h3>4. &lt;source&gt;</h3>
+        <p>Defines multiple media file sources for audio/video.</p>
+<pre><code>&lt;video controls&gt;
+    &lt;source src="movie.mp4" type="video/mp4"&gt;
+    &lt;source src="movie.webm" type="video/webm"&gt;
+&lt;/video&gt;</code></pre>
+
+        <!-- FIGURE -->
+        <h3>5. &lt;figure&gt; + &lt;figcaption&gt;</h3>
+        <p>Used for images or media with captions.</p>
+<pre><code>&lt;figure&gt;
+    &lt;img src="img.jpg" alt=""&gt;
+    &lt;figcaption&gt;Caption text&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+
+        <!-- PICTURE -->
+        <h3>6. &lt;picture&gt;</h3>
+        <p>Allows responsive images for different screen sizes.</p>
+<pre><code>&lt;picture&gt;
+    &lt;source srcset="large.jpg" media="(min-width: 800px)"&gt;
+    &lt;source srcset="small.jpg" media="(max-width: 799px)"&gt;
+    &lt;img src="default.jpg" alt="Responsive"&gt;
+&lt;/picture&gt;</code></pre>
+
+        <!-- TRACK -->
+        <h3>7. &lt;track&gt;</h3>
+        <p>Adds subtitles or captions to videos.</p>
+<pre><code>&lt;video controls&gt;
+    &lt;source src="video.mp4"&gt;
+    &lt;track src="subtitles.vtt" kind="subtitles" srclang="en" label="English"&gt;
+&lt;/video&gt;</code></pre>
+
+    </div>
+
+    <!-- RIGHT – OUTPUT PREVIEW -->
+    <div class="right">
+        <h2>Output Preview</h2>
+
+        <div class="example-box">
+
+            <h3>1. Image</h3>
+            <div class="demo-box">
+                <img src="https://via.placeholder.com/200" alt="Sample Image">
+            </div>
+
+            <h3>2. Audio</h3>
+            <div class="demo-box">
+                <audio controls>
+                    <source src="#" type="audio/mp3">
+                </audio>
+            </div>
+
+            <h3>3. Video</h3>
+            <div class="demo-box">
+                <video width="300" controls>
+                    <source src="#">
+                </video>
+            </div>
+
+            <h3>4. Figure + Caption</h3>
+            <figure class="demo-box">
+                <img src="https://via.placeholder.com/150" alt="">
+                <figcaption>Sample Caption</figcaption>
+            </figure>
+
+            <h3>5. Picture (Responsive)</h3>
+            <div class="demo-box">
+                <picture>
+                    <source srcset="https://via.placeholder.com/250" media="(min-width: 600px)">
+                    <source srcset="https://via.placeholder.com/150" media="(max-width: 599px)">
+                    <img src="https://via.placeholder.com/180" alt="Responsive Image">
+                </picture>
+            </div>
+
+            <h3>6. Video with Subtitles (track)</h3>
+            <div class="demo-box">
+                <video width="300" controls>
+                    <source src="#">
+                    <track src="#" kind="subtitles" srclang="en" label="English">
+                </video>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Typography Tags – HTML Learning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .left, .right {
+            width: 50%;
+            padding: 40px;
+            overflow-y: scroll;
+        }
+        .left {
+            background: white;
+            border-right: 2px solid #ddd;
+        }
+        .right {
+            background: #fafafa;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        pre {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            overflow-x: scroll;
+        }
+        .example-box {
+            padding: 20px;
+            background: white;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- LEFT SIDE — Explanation -->
+    <div class="left">
+        <h2>Typography Tags</h2>
+        <p>Typography tags control text appearance, importance, and structure.</p>
+
+        <h3>1. Heading Tags (h1–h6)</h3>
+        <p>Used for titles and subheadings. h1 is the most important, h6 is the least.</p>
+<pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+</code></pre>
+
+        <h3>2. &lt;p&gt; Paragraph</h3>
+        <p>Displays standard text blocks.</p>
+
+<pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+
+        <h3>3. &lt;br&gt; Line Break</h3>
+        <p>Breaks the line without starting a new paragraph.</p>
+
+<pre><code>Hello&lt;br&gt;World</code></pre>
+
+        <h3>4. &lt;hr&gt; Horizontal Line</h3>
+        <p>Creates a thematic break.</p>
+
+<pre><code>&lt;hr&gt;</code></pre>
+
+        <h3>5. &lt;strong&gt; and &lt;b&gt;</h3>
+        <p><strong>strong:</strong> bold with importance.</p>
+        <p><b>b:</b> visual bold only.</p>
+
+<pre><code>&lt;strong&gt;Important&lt;/strong&gt;
+&lt;b&gt;Bold Text&lt;/b&gt;</code></pre>
+
+        <h3>6. &lt;em&gt; and &lt;i&gt;</h3>
+        <p><em>em:</em> emphasis (screen readers stress it)</p>
+        <p><i>i:</i> italic styling only</p>
+
+<pre><code>&lt;em&gt;Emphasized&lt;/em&gt;
+&lt;i&gt;Italic&lt;/i&gt;</code></pre>
+
+        <h3>7. &lt;u&gt; Underline</h3>
+<pre><code>&lt;u&gt;Underlined text&lt;/u&gt;</code></pre>
+
+        <h3>8. &lt;mark&gt; Highlight</h3>
+<pre><code>&lt;mark&gt;Highlighted text&lt;/mark&gt;</code></pre>
+
+        <h3>9. &lt;small&gt; Small text</h3>
+<pre><code>&lt;small&gt;Small note&lt;/small&gt;</code></pre>
+
+        <h3>10. &lt;del&gt; Deleted text</h3>
+<pre><code>&lt;del&gt;Deleted&lt;/del&gt;</code></pre>
+
+        <h3>11. &lt;ins&gt; Inserted (underlined) text</h3>
+<pre><code>&lt;ins&gt;Inserted&lt;/ins&gt;</code></pre>
+
+        <h3>12. &lt;sup&gt; Superscript</h3>
+<pre><code>X&lt;sup&gt;2&lt;/sup&gt;</code></pre>
+
+        <h3>13. &lt;sub&gt; Subscript</h3>
+<pre><code>H&lt;sub&gt;2&lt;/sub&gt;O</code></pre>
+
+        <h3>14. &lt;blockquote&gt; Quoted text</h3>
+<pre><code>&lt;blockquote&gt;A long quote.&lt;/blockquote&gt;</code></pre>
+
+        <h3>15. &lt;pre&gt; Preformatted text</h3>
+<pre><code>&lt;pre&gt;
+    Text stays
+        exactly as typed
+&lt;/pre&gt;
+</code></pre>
+
+        <h3>16. &lt;code&gt; Code snippet</h3>
+<pre><code>&lt;code&gt;console.log("Hello")&lt;/code&gt;</code></pre>
+    </div>
+
+    <!-- RIGHT SIDE — Output -->
+    <div class="right">
+        <h2>Output Preview</h2>
+
+        <div class="example-box">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+
+            <p>This is a paragraph.</p>
+            Hello<br>World
+            <hr>
+
+            <strong>Important</strong><br>
+            <b>Bold text</b><br>
+
+            <em>Emphasized</em><br>
+            <i>Italic</i><br>
+
+            <u>Underlined</u><br>
+            <mark>Highlighted text</mark><br>
+
+            <small>Small note</small><br>
+            <del>Deleted</del><br>
+            <ins>Inserted</ins><br>
+
+            X<sup>2</sup><br>
+            H<sub>2</sub>O<br>
+
+            <blockquote>A long quote.</blockquote>
+
+            <pre>
+    Text stays
+        exactly as typed
+            </pre>
+
+            <code>console.log("Hello")</code>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
