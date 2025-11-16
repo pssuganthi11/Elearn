@@ -11,30 +11,30 @@
 </head>
 
 <body>
-  <header>
-    <nav>
-        <div class="logo">
-            <img src="./Assets/elearn.png" alt="logo" width="80" height="80">
-            <span>Infinity Learn</span>
-        </div>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./Assets/elearn.png" alt="logo" width="80" height="80">
+                <span>Infinity Learn</span>
+            </div>
 
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="hamburger">☰</label>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">☰</label>
 
-        <ul class="nav-links">
-            <li><a href="#hero-section">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#course">Course</a></li>
-            <li><a href="#Contact">Contact Us</a></li>
-        </ul>
-    </nav>
-</header>
+            <ul class="nav-links">
+                <li><a href="#hero-section">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#course">Course</a></li>
+                <li><a href="#Contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
         <section id="hero-section" class="herosection">
             <div class="content">
                 <p>
-                    Take your time... Learn from <span>AnyWhere</span> <br />
+                    Take your time... <br />Learn from <span>AnyWhere</span> <br />
                     Empower your future with expert-led courses, interactive lessons, and real-world projects.
                     Start your learning journey today.
 
@@ -43,7 +43,7 @@
             </div>
         </section>
         <section id="about" class="about-section">
-            <h2>About us</h2>
+            <h2>About</h2>
             <div class="aboutcontainer">
                 <div class="aboutimage">
                     <img src="./Assets/about.jpg" alt="aboutimage" width="600" height="400" />
@@ -73,14 +73,12 @@
                     <a class="cardlink" href="Details/structure.html" target="_blank">
                         <h3>structure Tags</h3>
                         <p>html,head,title, meta,body,link</p>
-                        <pre><code>&lt;p&gt;Hello&lt;/p&gt;</code></pre>
                     </a>
                 </div>
                 <div class="card">
                     <a class="cardlink" href="Details/typograpy.html" target="_blank">
                         <h3>Typography Tags</h3>
                         <p>h1–h6, p, br, hr, strong, em</p>
-                        <pre><code>&lt;p&gt;Hello&lt;/p&gt;</code></pre>
                     </a>
                 </div>
 
@@ -90,7 +88,6 @@
                     <a class="cardlink" href="./Details/containertags.html" target="_blank">
                         <h3>Container Tags</h3>
                         <p>div, span, section, article</p>
-                        <pre><code>&lt;div&gt;Block&lt;/div&gt;</code></pre>
                     </a>
                 </div>
 
@@ -100,7 +97,6 @@
                     <a class="cardlink" href="./Details/liststructure.html" target="_blank">
                         <h3>List Tags</h3>
                         <p>ul, ol, li</p>
-                        <pre><code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></pre>
                     </a>
                 </div>
 
@@ -110,7 +106,6 @@
                     <a class="cardlink" href="Details/mediastructure.html" target="_blank">
                         <h3>Media Tags</h3>
                         <p>img, video, audio, iframe</p>
-                        <pre><code>&lt;img src="pic.jpg" /&gt;</code></pre>
                     </a>
                 </div>
 
@@ -120,7 +115,6 @@
                     <a class="cardlink" href="Details/tablestructure.html" target="_blank">
                         <h3>Table Tags</h3>
                         <p>table, tr, td, th</p>
-                        <pre><code>&lt;table&gt;...&lt;/table&gt;</code></pre>
                     </a>
                 </div>
 
@@ -130,15 +124,16 @@
                     <a class="cardlink" href="Details/formstrucure.html" target="_blank">
                         <h3>Form Tags</h3>
                         <p>form, input, button, label, textarea, select</p>
-                        <pre><code>&lt;form&gt;...&lt;/form&gt;</code></pre>
                     </a>
                 </div>
             </div>
         </section>
+
         <section id="Contact" class="contact-section">
             <h2>Contact Us</h2>
             <div class="contactcontainer">
-                <div>
+                <div class="contactinnercontainer">
+
                     <form>
                         <label for="fname">First Name:</label> <br />
                         <div class="inputbox">
@@ -155,45 +150,51 @@
                         <label for="phonenumber">Phone Number:</label> <br />
                         <div class="inputbox">
                             <i class="fa-solid fa-phone"></i>
-                            <input type="number" id="phonenumber" name="phonenumber" placeholder="Enter your PhoneNumber"><br />
+                            <input type="number" id="phonenumber" name="phonenumber"
+                                placeholder="Enter your PhoneNumber"><br />
                         </div>
 
                         <label for="message">Message:</label><br />
-                        <textarea name="message" rows="10" cols="30">
-                    </textarea><br />
+                        <div class="inputbox">
+                            <textarea name="message" rows="10" cols="30">
+                            </textarea><br />
+                        </div>
+
                         <button>Submit</button>
                     </form>
-                </div>
-                <!-- <div class="contactimg">
+
+                    <!-- <div class="contactimg">
                     <img src="./Assets/contactse.png" width="500" height="500" />
                 </div> -->
-                <div class="contacttext">
-                    <p>We’d love to hear from you! Fill out the form and our team will reach out soon...</p>
+                    <div class="contacttext">
+                        <p>We’d love to hear from you! Fill out the form and our team will reach out soon...</p>
+                    </div>
                 </div>
+
             </div>
         </section>
     </main>
     <footer>
         <div class="social-icon">
-    <a href="https://www.instagram.com/suganthi_pattappan/" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-    </a>
+            <a href="https://www.instagram.com/suganthi_pattappan/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
 
-    <a href="https://www.linkedin.com/in/suganthi-pattappan-b7a3921b7/" target="_blank">
-        <i class="fa-brands fa-linkedin-in"></i>
-    </a>
+            <a href="https://www.linkedin.com/in/suganthi-pattappan-b7a3921b7/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
 
-    <a href="https://facebook.com/#test" target="_blank">
-        <i class="fa-brands fa-facebook-f"></i>
-    </a>
+            <a href="https://facebook.com/#test" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
 
-    <a href="mailto:pssuganthi11@gmail.com" target="_blank">
-        <i class="fa-regular fa-envelope"></i>
-    </a>
-</div>
+            <a href="mailto:pssuganthi11@gmail.com" target="_blank">
+                <i class="fa-regular fa-envelope"></i>
+            </a>
+        </div>
 
         <p class="license">
-            © 2025 suganthi. All rights reserved.
+            © 2025 Infinity learn. All rights reserved.
         </p>
     </footer>
 </body>
